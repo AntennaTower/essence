@@ -1,3 +1,3 @@
 export const environment = {
-  serverUrl: 'https://jawhar.samisul.com/api',
+  serverUrl: 'https://essence.antennatower.xyz/api',
 };

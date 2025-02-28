@@ -1,1 +1,1 @@
-export const ACTIVE_LANG_KEY = 'jawhar-active-lang';
+export const ACTIVE_LANG_KEY = 'essence-active-lang';

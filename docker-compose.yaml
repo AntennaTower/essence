@@ -2,7 +2,7 @@ version: "3"
 
 services:
   nest:
-    image: mmayss/jawhar_server:master
+    image: mmayss/essence_server:master
     container_name: nest
     restart: unless-stopped
     env_file:
@@ -11,7 +11,7 @@ services:
       - "127.0.0.1:3000:3000"
 
   web:
-    image: mmayss/jawhar_web:master
+    image: mmayss/essence_web:master
     container_name: web
     restart: unless-stopped
     ports:

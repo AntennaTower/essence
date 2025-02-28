@@ -12,10 +12,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideTransloco({
       config: {
-        availableLangs: [
-          { id: 'ar', label: 'العربية' },
-          { id: 'en', label: 'English' },
-        ],
+        availableLangs: [{ id: 'en', label: 'English' }],
         defaultLang: 'en',
         reRenderOnLangChange: true,
         prodMode: !isDevMode(),

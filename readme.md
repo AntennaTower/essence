@@ -1,20 +1,22 @@
 > Still under development and currently offline.
 
-### jawhar - جوهر
+### essence
 
-Gist-based blogging system. Create gists and view them in a blog-like format at [jawhar.samisul.com](https://jawhar.samisul.com)
+Gist-based blogging system. Create gists and view them in a blog-like format at [essence.antennatower.xyz](https://essence.antennatower.xyz)
 
 #### Demo
 
-##### Example of a blog post (file under the jawhar gist)
-![1](./.github/assets/1.png)   
+##### Example of a blog post (file under the essence gist)
 
-#### The result is the following blog post at `jawhar.samisul.com/posts/<username>/<post title>`
+![1](./.github/assets/1.png)
+
+#### The result is the following blog post at `essence.antennatower.xyz/posts/<username>/<post title>`
+
 ![2](./.github/assets/2.png)
 
 #### Usage
 
-- Create a gist with the description `jawhar`
+- Create a gist with the description `essence`
 - Add files with the extension `.md` to the gist
 - The files should have the following format:
 
@@ -22,21 +24,17 @@ Gist-based blogging system. Create gists and view them in a blog-like format at 
 
 ```markdown
 # <insert title here> {#title} -- required
+
 # <tag1, tag2> {#tags} -- at least 1 is required
+
 # <insert image url> to image {#thumbnail}
+
 # <true/false> {#draft}
+
 # <insert url to markdown file that will replace the content> {#content}
 
 INSERT CONTENT HERE
 ```
 
-- Visit [jawhar.samisul.com](https://jawhar.samisul.com)
-- Search for username (try `samisul` for a demo)
-
-#### Features
-
-- [x] View Posts/Post
-- [x] Search Posts
-- [x] View Posts by Tag
-
-> jawhar - جَوْهَر: essense aka gist
+- Visit [essence.antennatower.xyz](https://essence.antennatower.xyz)
+- Search for username (try `antennatower` for a demo)

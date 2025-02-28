@@ -33,7 +33,7 @@ export class GithubService {
 
   async fetchGistFiles(username: string): Promise<Post[]> {
     try {
-      const _fileUrls = await this.fetchJawharGistFileUrls(username);
+      const _fileUrls = await this.fetchGistFileUrls(username);
       return (
         await Promise.all(
           _fileUrls.map(
@@ -71,8 +71,8 @@ export class GithubService {
     }
   }
 
-  private async fetchJawharGistFileUrls(username: string): Promise<string[]> {
-    const _gistUrl = await this.fetchJawharGistUrl(username);
+  private async fetchGistFileUrls(username: string): Promise<string[]> {
+    const _gistUrl = await this.fetchGistUrl(username);
     const $ = cheerio.load(
       (
         await firstValueFrom(
@@ -92,7 +92,7 @@ export class GithubService {
   }
 
   // TODO: maybe refactor this to return an observable instead?
-  private async fetchJawharGistUrl(username: string): Promise<string> {
+  private async fetchGistUrl(username: string): Promise<string> {
     let _res: AxiosResponse;
     let _page = 1;
 
@@ -113,7 +113,7 @@ export class GithubService {
         .find('.gist-snippet-meta')
         .find('div > div > :nth-child(2) :nth-child(3)')
         .toArray()
-        .find((el) => $(el).text().trim() === 'jawhar');
+        .find((el) => $(el).text().trim() === 'essence');
 
       if (!!_el)
         return $(_el.parent.parent.parent).find('ul > li > a').attr('href');
